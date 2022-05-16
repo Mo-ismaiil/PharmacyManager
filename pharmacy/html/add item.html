@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy-Add Items</title>
+    <script defer src="../script/items.js"></script>
+    <link rel="stylesheet" href="../css/form.css">
+
+</head>
+<body> 
+    <ul>
+        <li><a href="../html/admin.html">Home</a></li>
+        <li><a href="../html/add item.html">Add Items</a></li>
+        <li><a href="../html/items.html">Show Items</a></li>
+        <li><a href="../html/invoice.html"> Make Invoice</a></li>
+        <li><a href="../html/show invoice.html">Invoices</a></li>
+      </ul>
+      <div class="loginbox">
+          <h3>Add Item</h3>
+    <input type="text" placeholder="name" id="itemName" /><br/>
+    <input type="number" placeholder="price" id="itemPrice" /><br/>
+    <input type="number" placeholder="quantity" id="itemQuantity" /><br/>
+    <div>
+      <video autoplay="true" id="videoElement"></video>
+        <button id="take" onclick="takescreenshot();">Capture</button>
+        <canvas id="showscreenshot" hidden></canvas>
+        <img id="showscreenshotimg"src="" alt="captured pic">  
+     </div>
+    <button id="Btn" type="submit">Add</button></div> 
+</body>
+</html>

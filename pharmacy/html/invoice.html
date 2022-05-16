@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="../script/invoice.js"></script>
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+  <ul>
+    <li><a href="../html/admin.html">Home</a></li>
+    <li><a href="../html/add item.html">Add Items</a></li>
+    <li><a href="../html/items.html">Show Items</a></li>
+    <li><a href="../html/invoice.html"> Make Invoice</a></li>
+    <li><a href="../html/show invoice.html">Invoices</a></li>
+  </ul>
+  <div class="loginbox">
+    <form>
+            <h3 class="">Please enter invoice details</h3>
+            <div class="">
+              <label for="cust" >Customer Name</label>
+              <input type="text" id="cust"placeholder="Customer Name" required autofocus>
+            </div>
+            <div>
+              <label for="select" >Transaction Type</label>
+            <select id="select">
+                <option selected>Choose the transaction type</option>
+                <option value="1">Buy</option>
+                <option value="2">Sell</option>
+              </select>
+            </div>
+            <div >
+              <label for="item" >Item Name</label>
+              <input type="text" id="item"  placeholder="Item Name" required>
+            </div>
+
+            <div>
+              <label for="quan" >Quantity</label>
+              <input type="number" id="quan"  placeholder="Quantity" required>
+            </div>
+            <div >
+                <label for="date" >Date</label>
+                <input type="date" id="date"  required>
+              </div>
+            
+            <div >
+              <button id="loginbtn" type="submit">buy/sell Item</button>
+            </div>
+          </form>
+        </div>
+</body>
+</html>
